@@ -1,7 +1,11 @@
+#!/bin/bash
+
+echo "Enter New Username"
+
+read first_name
 
 
-
-USER="$username"
+USER=first_name
 
 
 
