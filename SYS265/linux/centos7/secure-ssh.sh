@@ -1,11 +1,6 @@
 #!/bin/bash
 
-echo "Enter New Username"
-
-read first_name
-
-
-USER=first_name
+USER=jack-ssh-test
 
 
 
