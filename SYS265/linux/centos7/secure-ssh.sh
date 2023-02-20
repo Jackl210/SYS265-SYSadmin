@@ -1,11 +1,14 @@
 #!/bin/bash
 
-USER=jack-ssh-test
+echo "What is the desired account username?"
+read first_name
+
+USER=$first_name
 
 
 
 
-sudo useradd -m -d ${USER} /home/${USER} -s /bin/bash ${USER};
+sudo useradd -m -d /home/${USER} -s /bin/bash ${USER};
 sudo mkdir /home/${USER}/.ssh;
 sudo cp ~/SYS265-SYSadmin/SYS265/linux/public-keys/id_rsa.pub /home/${USER}/.ssh/authorized_keys;
 sudo chmod 700 /home/${USER}/.ssh;
